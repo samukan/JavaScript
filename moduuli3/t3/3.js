@@ -1,11 +1,8 @@
 'use strict';
 
-const targetElement = document.getElementById("target");
+const names = ['John', 'Paul', 'Jones'];
+const targetElement = document.getElementById('target');
 
-const names = ["John", "Paul", "Jones"];
-
-targetElement.innerHTML = `
-  <li>${names[0]}</li>
-  <li>${names[1]}</li>
-  <li>${names[2]}</li>
-`;
+for (let i = 0; i < names.length; i++) {
+  targetElement.innerHTML += '<li>' + names[i] + '</li>';
+}
